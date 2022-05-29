@@ -1,38 +1,36 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container-img-cabecera {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container-img-cabecera img{
+  transform: s;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container-img-cabecera *{
+  padding: 30px;
+}
+
+.container-lista-tareas, .container-lista-tareas *{
+  border-radius: 20px;
+}
+
+.container-lista-tareas{
+  background-color: #528CC6;
+  width: 70%;
+  min-height: 16vh;
+  padding: 20px;
   display: flex;
   flex-direction: column;
+  /* justify-content: center; */
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  margin: auto;
+  margin-top: 2%;
 }
