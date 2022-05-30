@@ -12,8 +12,8 @@ const FormularioTarea = (props) => {
 
 
     const esCribiendoInput = (e) => {
-            setTexto(e.target.value);
-            if (e.key === 'Enter') {enviarTarea();};
+        setTexto(e.target.value);
+        if (e.key === 'Enter') { enviarTarea(); };
 
     }
     const enviarTarea = (e) => {
@@ -32,19 +32,28 @@ const FormularioTarea = (props) => {
 
     return (
 
-        <div className="container-formulario-tarea">
+        <div className="row d-flex justify-content-center w-100 p-0">
+            <div className="container-formulario-tarea">
+                <div className="col-9">
 
-            <input type="text" className="input-tarea"
-                placeholder='Escribe lo que no vas a hacer'
-                onChange={esCribiendoInput} onKeyDown={esCribiendoInput}
-            />
+                    <input type="text" className="input-tarea"
+                        placeholder='Escribe lo que no vas a hacer'
+                        onChange={esCribiendoInput} onKeyDown={esCribiendoInput}
+                    />
+                </div>
 
-            <button className="boton-formulario-tarea" onClick={enviarTarea}>
-                Enviar
-            </button>
+                <div className="col-3">
+
+                    <div className="boton-formulario-tarea" onClick={enviarTarea}>
+                        Enviar
+                    </div>
+
+                </div>
 
 
 
+
+            </div>
         </div>
     )
 

@@ -3,27 +3,30 @@
     min-height: 100px;
     /* background-color: rgb(100, 57, 0); */
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     /* align-self: flex-start; */
 }
 
 .input-tarea{
-    width: 89%;
-    height: 50px;
+    width: 95%;
+    min-height: 50px;
     outline: none;
     border: 1px solid black;
     padding-left: 3%;
+
 }
 .input-tarea::placeholder{
-    /* padding-left: 5%; */
     color: rgb(92, 92, 92);
+    white-space:wrap;
 }
 
 .boton-formulario-tarea{
-    min-width: 9%;
-    height: 50px;
+    min-height: 50px;
     outline: none;
     border: 1px solid black;
     background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
