@@ -18,21 +18,21 @@ const ListaTareas = () => {
     const tareasActualizadass = tareas.filter(tarea => tarea.id !== id);
     setTareas(tareasActualizadass);
     console.log(tareasActualizadass)
-    
+
     setTareas(tareas.filter(tarea => tarea.id !== id));
-    console.log(tareas.filter(tarea=> console.log(tarea.id, id, 'eh')))
+    console.log(tareas.filter(tarea => console.log(tarea.id, id, 'eh')))
     console.log(tareas)
   }
 
   const completar = (id) => {
-    const tareasActualizadas = tareas.map(tarea=>{
-      if(tarea.id === id){
+    const tareasActualizadas = tareas.map(tarea => {
+      if (tarea.id === id) {
         tarea.estaCompletada = !tarea.estaCompletada
       }
       return tarea;
     });
-    setTareas((tarea)=> tarea = tareasActualizadas)
-    
+    setTareas((tarea) => tarea = tareasActualizadas)
+
   }
 
 
@@ -50,10 +50,9 @@ const ListaTareas = () => {
               id={tarea.id}
               texto={tarea.texto}
               estaCompletada={tarea.estaCompletada}
-              // completarTarea={completar(tarea)}
-              eliminar={eliminarTareaa} 
+              eliminar={eliminarTareaa}
               completarTarea={completar}
-              />
+            />
           )
         }
 
