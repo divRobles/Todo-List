@@ -21,7 +21,7 @@
 }
 
 .boton-formulario-tarea{
-    width: 9%;
+    min-width: 9%;
     height: 50px;
     outline: none;
     border: 1px solid black;

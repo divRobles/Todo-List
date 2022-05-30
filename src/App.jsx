@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <div className="container-img-cabecera">
-        <img src={Foto4Geeks} alt="logo" className="imagen-cabecera" />
+        {/* <img src={Foto4Geeks} alt="logo" className="imagen-cabecera" /> */}
       </div>
 
       <div className="container-lista-tareas">

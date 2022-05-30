@@ -1,3 +1,4 @@
+
 *{
   margin: 0;
   padding: 0;
@@ -8,10 +9,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background: url(../src/imgs/Foto4Geeks.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 20vh;
+  width: 90%;
+  margin: 3% auto;
 }
 
 .container-img-cabecera img{
-  transform: s;
+
 }
 
 .container-img-cabecera *{
@@ -29,7 +37,6 @@
   padding: 20px;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
   margin: auto;
   margin-top: 2%;
